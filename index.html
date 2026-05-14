@@ -3,17 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Patchman - Lightweight API Client for Developers</title>
+  <title>Patchman - Lightweight Postman Alternative for API Testing</title>
   <meta
     name="description"
-    content="Patchman is a lightweight API client built with Tauri and Rust. Simple, fast, Git-friendly, and made for developer collaboration."
+    content="Patchman is a lightweight Postman alternative for API testing. Build REST requests, keep API collections local, and collaborate through Git-friendly files."
   />
+  <meta
+    name="keywords"
+    content="Postman alternative, Postman alternatives, lightweight API client, API testing tool, REST client, HTTP client, local API client, offline API client, Git-friendly API client, API request builder, developer API tool, Tauri API client, Rust API client"
+  />
+  <meta name="author" content="Kadek Cahya" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#1e3a5f" />
+  <link rel="canonical" href="https://patchman.dev/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Patchman" />
+  <meta property="og:title" content="Patchman - Lightweight Postman Alternative" />
+  <meta
+    property="og:description"
+    content="A fast, local-first API client for developers who want Postman-style request testing without heavy workspace overhead."
+  />
+  <meta property="og:url" content="https://patchman.dev/" />
+  <meta property="og:image" content="https://patchman.dev/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Patchman - Lightweight Postman Alternative" />
+  <meta
+    name="twitter:description"
+    content="Build and test APIs with a lightweight, Git-friendly API client made for local developer workflows."
+  />
+  <meta name="twitter:image" content="https://patchman.dev/og-image.png" />
   <link
     rel="stylesheet"
     type="text/css"
     href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css"
   />
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Patchman",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Windows, macOS, Linux",
+      "description": "Patchman is a lightweight Postman alternative for API testing, REST request building, local-first collections, and Git-friendly collaboration.",
+      "url": "https://patchman.dev/",
+      "author": {
+        "@type": "Person",
+        "name": "Kadek Cahya",
+        "url": "https://github.com/kdkchy"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/PreOrder"
+      },
+      "keywords": [
+        "Postman alternative",
+        "API client",
+        "API testing",
+        "REST client",
+        "HTTP client",
+        "offline API client",
+        "Git-friendly API client",
+        "local-first developer tool"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Patchman a Postman alternative?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Patchman is positioned as a lightweight Postman alternative for developers who want fast API testing, local request files, and Git-based collaboration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is Patchman built for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Patchman is built for backend engineers, frontend developers, QA teams, and API-first product teams that want a simple REST and HTTP client for everyday development work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Patchman support team collaboration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Patchman keeps API requests and collections as developer-friendly files so teams can review, diff, branch, merge, and version API changes with Git."
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <div class="page">
@@ -26,7 +114,9 @@
 
         <nav class="nav-links" aria-label="Main navigation">
           <a href="#features">Features</a>
+          <a href="#postman-alternative">Postman Alternative</a>
           <a href="#workflow">Workflow</a>
+          <a href="#faq">FAQ</a>
           <a href="#download">Download</a>
           <a class="nav-cta" href="#download"><i class="ph-bold ph-download-simple" aria-hidden="true"></i>Get the app</a>
         </nav>
@@ -39,19 +129,26 @@
           <div>
             <div class="eyebrow">
               <i class="ph-bold ph-rocket-launch eyebrow-icon" aria-hidden="true"></i>
-              Lightweight client for fast local API work
+              <span>Lightweight Postman alternative for local API testing</span>
             </div>
 
-            <h1>Open. Test. Commit. Done.</h1>
+            <h1>Open. Request. Commit. Done.</h1>
 
             <p class="hero-copy">
-              Patchman is a lightweight API client built for developers who want a simple request workflow,
-              fast startup, local-first files, and Git-based collaboration without heavy workspace overhead.
+              Patchman is a lightweight API client for REST request testing, local-first API collections,
+              and Git-based collaboration without heavy workspace overhead.
             </p>
 
             <div class="hero-actions">
               <a class="btn btn-primary" href="#download"><i class="ph-bold ph-download-simple" aria-hidden="true"></i>Download Patchman</a>
-              <a class="btn btn-secondary" href="#features"><i class="ph-bold ph-arrow-right" aria-hidden="true"></i>See why Patchman</a>
+              <a class="btn btn-secondary" href="#postman-alternative"><i class="ph-bold ph-arrow-right" aria-hidden="true"></i>Compare with Postman</a>
+            </div>
+
+            <div class="search-terms" aria-label="Popular Patchman use cases">
+              <span>Postman alternative</span>
+              <span>REST API client</span>
+              <span>HTTP request builder</span>
+              <span>Git-friendly collections</span>
             </div>
           </div>
 
@@ -77,7 +174,7 @@
 
                 <section class="mock-main">
                   <div class="request-bar">
-                    <div class="method"></i>POST</div>
+                    <div class="method">POST</div>
                     <div class="url"><i class="ph-bold ph-link" aria-hidden="true"></i>https://api.example.com/auth/login</div>
                   </div>
 
@@ -107,10 +204,10 @@
       <section id="features" class="section">
         <div class="container">
           <div class="section-head">
-            <h2>Less weight. More flow.</h2>
+            <h2>API testing with less weight.</h2>
             <p>
-              Patchman focuses on the core job: create requests, organize them clearly, run them fast,
-              and collaborate with the tools developers already use.
+              Patchman focuses on the core API client workflow: create REST requests, organize collections,
+              inspect responses, and collaborate with the tools developers already use.
             </p>
           </div>
 
@@ -119,7 +216,7 @@
               <div class="feature-icon" aria-hidden="true">
                 <i class="ph-bold ph-git-branch"></i>
               </div>
-              <h3>Use Git for collaboration</h3>
+              <h3>Git-friendly API collections</h3>
               <p>
                 Store workspaces, collections, requests, and drafts as files. Branch, review, diff, and merge API changes like source code.
               </p>
@@ -129,9 +226,9 @@
               <div class="feature-icon" aria-hidden="true">
                 <i class="ph-bold ph-lightning"></i>
               </div>
-              <h3>Lightweight and fast</h3>
+              <h3>Lightweight Postman alternative</h3>
               <p>
-                Skip the heavy workspace feeling. Patchman is designed to open quickly and keep the request workflow responsive.
+                Skip the heavy workspace feeling. Patchman is designed to open quickly and keep API request testing responsive.
               </p>
             </article>
 
@@ -139,7 +236,7 @@
               <div class="feature-icon" aria-hidden="true">
                 <i class="ph-bold ph-brackets-curly"></i>
               </div>
-              <h3>Built with Tauri and Rust</h3>
+              <h3>Local-first desktop foundation</h3>
               <p>
                 A smaller desktop app foundation with native capabilities, efficient performance, and cross-platform build potential.
               </p>
@@ -149,11 +246,46 @@
               <div class="feature-icon" aria-hidden="true">
                 <i class="ph-bold ph-chart-line-up"></i>
               </div>
-              <h3>Simple productivity</h3>
+              <h3>Simple REST client workflow</h3>
               <p>
                 Move through request work with fewer pauses: open, send, inspect, commit, and keep momentum across the team.
               </p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="postman-alternative" class="section section-soft">
+        <div class="container split-section">
+          <div class="callout callout-flat">
+            <h2>Why developers look for Postman alternatives.</h2>
+            <p>
+              Many teams want an API testing tool that feels closer to their codebase: lighter startup,
+              local files, fewer account dependencies, and request collections that can be reviewed in Git.
+            </p>
+            <p>
+              Patchman is built around that workflow. It gives developers a focused HTTP and REST client
+              for everyday API work without forcing collaboration into a separate cloud workspace.
+            </p>
+          </div>
+
+          <div class="comparison-list" aria-label="Patchman as a Postman alternative">
+            <div class="comparison-row">
+              <span><i class="ph-bold ph-hard-drives" aria-hidden="true"></i>Local-first API work</span>
+              <strong>Keep requests close to your project</strong>
+            </div>
+            <div class="comparison-row">
+              <span><i class="ph-bold ph-git-branch" aria-hidden="true"></i>Git-based collaboration</span>
+              <strong>Review API changes like code</strong>
+            </div>
+            <div class="comparison-row">
+              <span><i class="ph-bold ph-lightning" aria-hidden="true"></i>Fast request testing</span>
+              <strong>Open, send, inspect, and move on</strong>
+            </div>
+            <div class="comparison-row">
+              <span><i class="ph-bold ph-file-code" aria-hidden="true"></i>Developer-readable files</span>
+              <strong>A practical alternative to locked workspace data</strong>
+            </div>
           </div>
         </div>
       </section>
@@ -183,13 +315,50 @@
         </div>
       </section>
 
+      <section id="faq" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Postman alternative FAQ.</h2>
+            <p>
+              Short answers for developers searching for a lighter API client, REST client, or local-first API testing workflow.
+            </p>
+          </div>
+
+          <div class="faq-grid">
+            <article class="faq-item">
+              <h3>Is Patchman a Postman alternative?</h3>
+              <p>
+                Yes. Patchman is a lightweight Postman alternative focused on fast API request testing,
+                local collections, and developer workflows that fit naturally with Git.
+              </p>
+            </article>
+
+            <article class="faq-item">
+              <h3>What kind of API testing is Patchman for?</h3>
+              <p>
+                Patchman is for everyday HTTP and REST API testing: building requests, organizing endpoints,
+                checking responses, and keeping API examples ready for development and QA.
+              </p>
+            </article>
+
+            <article class="faq-item">
+              <h3>Why choose a Git-friendly API client?</h3>
+              <p>
+                Git-friendly API clients make request changes visible. Teams can branch, review, diff,
+                and merge API collections alongside the application code that depends on them.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="download" class="section">
         <div class="container">
           <div class="download-panel">
             <div>
               <h2>Download Patchman.</h2>
               <p>
-                Download the desktop app for your operating system when releases are available.
+                Try the lightweight Postman alternative for local API testing when releases are available for your operating system.
               </p>
               <div class="hero-actions download-actions">
                 <a class="btn btn-primary" href="#"><i class="ph-bold ph-download-simple" aria-hidden="true"></i>Download latest release</a>
