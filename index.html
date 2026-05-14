@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patchman - Lightweight API Client for Developers</title>
+  <meta
+    name="description"
+    content="Patchman is a lightweight API client built with Tauri and Rust. Simple, fast, Git-friendly, and made for developer collaboration."
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a class="brand" href="#top" aria-label="Patchman home">
+          <span class="brand-mark"><i class="ph-bold ph-package" aria-hidden="true"></i></span>
+          <span>Patchman</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#download">Download</a>
+          <a class="nav-cta" href="#download"><i class="ph-bold ph-download-simple" aria-hidden="true"></i>Get the app</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">
+              <i class="ph-bold ph-rocket-launch eyebrow-icon" aria-hidden="true"></i>
+              Lightweight client for fast local API work
+            </div>
+
+            <h1>Open. Test. Commit. Done.</h1>
+
+            <p class="hero-copy">
+              Patchman is a lightweight API client built for developers who want a simple request workflow,
+              fast startup, local-first files, and Git-based collaboration without heavy workspace overhead.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#download"><i class="ph-bold ph-download-simple" aria-hidden="true"></i>Download Patchman</a>
+              <a class="btn btn-secondary" href="#features"><i class="ph-bold ph-arrow-right" aria-hidden="true"></i>See why Patchman</a>
+            </div>
+          </div>
+
+          <div class="app-card" aria-label="Patchman app preview">
+            <div class="app-window">
+              <div class="window-top">
+                <div class="traffic" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="window-title">workspace / auth-api / login.patch</div>
+              </div>
+
+              <div class="mock-layout">
+                <aside class="mock-sidebar">
+                  <div class="mock-sidebar-title"><i class="ph-bold ph-folders" aria-hidden="true"></i>Collections</div>
+                  <div class="mock-item active">Auth API</div>
+                  <div class="mock-item">Users</div>
+                  <div class="mock-item">Orders</div>
+                  <div class="mock-item">Payments</div>
+                </aside>
+
+                <section class="mock-main">
+                  <div class="request-bar">
+                    <div class="method"></i>POST</div>
+                    <div class="url"><i class="ph-bold ph-link" aria-hidden="true"></i>https://api.example.com/auth/login</div>
+                  </div>
+
+                  <div class="code-box">
+                    {<br />
+                    &nbsp;&nbsp;"email": "dev@example.com",<br />
+                    &nbsp;&nbsp;"password": "&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"<br />
+                    }
+                  </div>
+
+                  <div class="response-box">
+                    <i class="ph-bold ph-check-circle" aria-hidden="true"></i>
+                    200 OK - token saved to environment
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="floating-note">
+              <strong><i class="ph-bold ph-git-pull-request" aria-hidden="true"></i>Git-friendly by design</strong>
+              <span>Requests live as files, so your team can review, diff, branch, and merge.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Less weight. More flow.</h2>
+            <p>
+              Patchman focuses on the core job: create requests, organize them clearly, run them fast,
+              and collaborate with the tools developers already use.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <i class="ph-bold ph-git-branch"></i>
+              </div>
+              <h3>Use Git for collaboration</h3>
+              <p>
+                Store workspaces, collections, requests, and drafts as files. Branch, review, diff, and merge API changes like source code.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <i class="ph-bold ph-lightning"></i>
+              </div>
+              <h3>Lightweight and fast</h3>
+              <p>
+                Skip the heavy workspace feeling. Patchman is designed to open quickly and keep the request workflow responsive.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <i class="ph-bold ph-brackets-curly"></i>
+              </div>
+              <h3>Built with Tauri and Rust</h3>
+              <p>
+                A smaller desktop app foundation with native capabilities, efficient performance, and cross-platform build potential.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <i class="ph-bold ph-chart-line-up"></i>
+              </div>
+              <h3>Simple productivity</h3>
+              <p>
+                Move through request work with fewer pauses: open, send, inspect, commit, and keep momentum across the team.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="workflow" class="section">
+        <div class="container split-section">
+          <div class="callout">
+            <h2>Designed around developer files.</h2>
+            <p>
+              Patchman treats API requests as project assets, not locked workspace data. That means your API workflow can live beside your codebase,
+              inside a repository, and inside your normal development process.
+            </p>
+            <p>
+              For teams, this keeps collaboration direct: create a branch, update a request, commit it, and let the team review the change.
+            </p>
+          </div>
+
+          <div class="terminal" aria-label="Git workflow example">
+            <p class="terminal-line"><span class="terminal-muted">$</span> git checkout -b add-login-request</p>
+            <p class="terminal-line"><span class="terminal-muted">$</span> patchman open workspace</p>
+            <p class="terminal-line"><span class="terminal-muted">$</span> git status</p>
+            <p class="terminal-line terminal-good">modified: workspaces/core/auth/login.patch</p>
+            <p class="terminal-line"><span class="terminal-muted">$</span> git add .</p>
+            <p class="terminal-line"><span class="terminal-muted">$</span> git commit -m "Add login API request"</p>
+            <p class="terminal-line terminal-good">Done. Request ready for review.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="section">
+        <div class="container">
+          <div class="download-panel">
+            <div>
+              <h2>Download Patchman.</h2>
+              <p>
+                Download the desktop app for your operating system when releases are available.
+              </p>
+              <div class="hero-actions download-actions">
+                <a class="btn btn-primary" href="#"><i class="ph-bold ph-download-simple" aria-hidden="true"></i>Download latest release</a>
+                <a class="btn btn-secondary" href="#"><i class="ph-bold ph-arrow-square-out" aria-hidden="true"></i>View releases</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-name">Kadek Cahya</div>
+          <div class="footer-handle">@kdkchy</div>
+        </div>
+
+        <div class="footer-links" aria-label="Creator links">
+          <a href="mailto:your.email@example.com"><i class="ph-bold ph-envelope-simple" aria-hidden="true"></i></a>
+          <a href="https://x.com/kdkchy"><i class="ph-bold ph-x-logo" aria-hidden="true"></i></a>
+          <a href="https://github.com/kdkchy"><i class="ph-bold ph-github-logo" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
