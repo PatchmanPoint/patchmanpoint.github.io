@@ -678,6 +678,18 @@ h2 {
   color: var(--muted);
 }
 
+.download-panel .download-version {
+  margin-top: 12px;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.download-version a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .footer {
   padding: 44px 0;
   border-top: 1px solid var(--line);
