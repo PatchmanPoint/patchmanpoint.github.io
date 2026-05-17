@@ -167,7 +167,7 @@
                   <span></span>
                   <span></span>
                 </div>
-                <div class="window-title">workspace / auth-api / login.patch</div>
+                <div class="window-title">workspace / auth-api / login</div>
               </div>
 
               <div class="mock-layout">
@@ -188,7 +188,7 @@
                   <div class="code-box">
                     {<br />
                     &nbsp;&nbsp;"email": "dev@example.com",<br />
-                    &nbsp;&nbsp;"password": "&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"<br />
+                    &nbsp;&nbsp;"password": "password123" // :)<br />
                     }
                   </div>
 
@@ -312,12 +312,12 @@
 
           <div class="terminal" aria-label="Git workflow example">
             <p class="terminal-line"><span class="terminal-muted">$</span> git checkout -b add-login-request</p>
-            <p class="terminal-line"><span class="terminal-muted">$</span> patchman open workspace</p>
             <p class="terminal-line"><span class="terminal-muted">$</span> git status</p>
-            <p class="terminal-line terminal-good">modified: workspaces/core/auth/login.patch</p>
+            <p class="terminal-line terminal-good">modified: workspaces/core/auth/login</p>
             <p class="terminal-line"><span class="terminal-muted">$</span> git add .</p>
             <p class="terminal-line"><span class="terminal-muted">$</span> git commit -m "Add login API request"</p>
             <p class="terminal-line terminal-good">Done. Request ready for review.</p>
+            <p class="terminal-line"><span class="terminal-muted">$</span> git push</p>
           </div>
         </div>
       </section>
