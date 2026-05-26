@@ -42,7 +42,7 @@
     type="text/css"
     href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css"
   />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20260526-accordion-step-images" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -359,6 +359,79 @@
         </div>
       </section>
 
+      <section class="section macos-warning-section" aria-labelledby="macos-warning-title">
+        <div class="container">
+          <div class="macos-warning">
+            <div class="macos-warning-icon" aria-hidden="true">
+              <i class="ph-bold ph-warning"></i>
+            </div>
+
+            <div>
+              <p class="macos-warning-kicker">macOS alpha notice</p>
+              <h2 id="macos-warning-title">The macOS build is not signed yet.</h2>
+              <p>
+                We are truly sorry. In this <b>Alpha</b> version, Patchman does not have an Apple Developer certificate yet,
+                so macOS may block the app the first time you open it. Code signing is planned for the <b>Beta</b> version.
+                For now, after trying to launch Patchman, open <strong>System Settings &gt; Privacy &amp; Security</strong>
+                and allow the app from there.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-section" aria-label="macOS installation details">
+          <div class="container">
+            <div class="accordion-wrapper">
+              <div class="accordion-item">
+                <input type="checkbox" id="accordion-1" class="accordion-toggle" />
+
+                <label for="accordion-1" class="accordion-header">
+                  More Details
+                  <span class="accordion-icon" aria-hidden="true"></span>
+                </label>
+
+                <div class="accordion-content">
+                  <div class="accordion-inner">
+                    <div class="accordion-body">
+                      <h3>The solution</h3>
+
+                      <div class="accordion-step">
+                        <h4>1st step</h4>
+                        <ol>
+                          <li>Open the Apple Menu and go to System Settings or System Preferences.</li>
+                          <li>Click on Privacy &amp; Security in the sidebar.</li>
+                          <li>Scroll down to the Security section. You will see a message stating the app was blocked.</li>
+                        </ol>
+                        <figure class="accordion-step-image">
+                          <img
+                            src="images/the-setting.jpeg"
+                            alt="macOS Privacy and Security settings showing Patchman was blocked with an Open Anyway button"
+                          />
+                        </figure>
+                      </div>
+
+                      <div class="accordion-step">
+                        <h4>2nd step</h4>
+                        <ol>
+                          <li>Click Open Anyway next to the app's name.</li>
+                          <li>Enter your Mac's administrator password to confirm.</li>
+                        </ol>
+                        <figure class="accordion-step-image accordion-step-image-compact">
+                          <img
+                            src="images/the-issue.jpeg"
+                            alt="macOS confirmation dialog asking to open Patchman with an Open Anyway button"
+                          />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
       <section id="download" class="section">
         <div class="container">
           <div class="download-panel">
@@ -398,6 +471,12 @@
         </div>
       </div>
     </footer>
+
+    <section class="footer-policy" aria-label="Site policies">
+      <div class="container footer-policy-inner">
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+    </section>
   </div>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDVNNCB381"></script>
