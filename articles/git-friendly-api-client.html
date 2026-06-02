@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Local-First, Git-Friendly API Clients Keep Teams Moving - Patchman</title>
+  <meta
+    name="description"
+    content="A short article about the Patchman v0.2.0-alpha release and why local-first, Git-friendly API request files make testing and collaboration easier."
+  />
+  <meta name="author" content="Kadek Cahya" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#1e3a5f" />
+  <link rel="canonical" href="https://patchmanpoint.github.io/articles/git-friendly-api-client.html" />
+  <link rel="icon" href="../favicon/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="../favicon/site.webmanifest" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Patchman" />
+  <meta property="og:title" content="Why Local-First, Git-Friendly API Clients Keep Teams Moving - Patchman" />
+  <meta
+    property="og:description"
+    content="A look at the Patchman v0.2.0-alpha release and why local request files make API work easier to test and review."
+  />
+  <meta property="og:url" content="https://patchmanpoint.github.io/articles/git-friendly-api-client.html" />
+  <meta property="og:image" content="https://patchmanpoint.github.io/images/preview/grouping.png" />
+  <meta property="article:published_time" content="2026-06-02" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Why Local-First, Git-Friendly API Clients Keep Teams Moving - Patchman" />
+  <meta
+    name="twitter:description"
+    content="A look at the Patchman v0.2.0-alpha release and why local request files make API work easier to test and review."
+  />
+  <meta name="twitter:image" content="https://patchmanpoint.github.io/images/preview/grouping.png" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css"
+  />
+  <link rel="stylesheet" href="../style.css?v=20260602-articles" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Why Local-First, Git-Friendly API Clients Keep Teams Moving",
+      "datePublished": "2026-06-02",
+      "dateModified": "2026-06-02",
+      "author": {
+        "@type": "Person",
+        "name": "Kadek Cahya"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Patchman"
+      },
+      "image": "https://patchmanpoint.github.io/images/preview/grouping.png",
+      "mainEntityOfPage": "https://patchmanpoint.github.io/articles/git-friendly-api-client.html"
+    }
+  </script>
+</head>
+<body>
+  <div class="page">
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a class="brand" href="../index.html" aria-label="Patchman home">
+          <span class="brand-mark"><img src="../logo.png" alt="" aria-hidden="true" /></span>
+          <span>Patchman</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="../articles.html">Articles</a>
+          <a href="../index.html#faq">FAQ</a>
+          <a href="../index.html#download">Download</a>
+          <a class="nav-cta" href="../index.html#download"><i class="ph-bold ph-download-simple" aria-hidden="true"></i>Get the app</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="article-page article-detail section">
+        <div class="container">
+          <article class="article-content">
+            <a class="article-back" href="../articles.html"><i class="ph-bold ph-arrow-left" aria-hidden="true"></i>All articles</a>
+            <p class="article-kicker">Workflow</p>
+            <h1>Why local-first, Git-friendly API clients keep teams moving</h1>
+            <time class="article-date" datetime="2026-06-02">June 2, 2026</time>
+            <p class="article-lead">
+              API requests change for the same reasons code changes: new endpoints, renamed fields, different auth flows,
+              and clearer examples. Keeping that work local, visible, and reviewable makes the team faster.
+            </p>
+
+            <figure class="article-hero-image">
+              <img
+                src="../images/preview/main-preview-tilt.png"
+                alt="Patchman app preview showing a local request workspace"
+              />
+            </figure>
+
+            <div class="article-body">
+              <p>
+                Many teams treat API client work as something separate from the repository. The app has its own workspace,
+                the workspace has its own sharing model, and the code has to catch up later. That can work, but it adds a
+                second place where important API knowledge quietly drifts.
+              </p>
+
+              <p>
+                API testing is usually part of a tight development loop. You change code, send a request, inspect the
+                response, adjust the request, and try again. In that moment, speed and clarity matter more than a large
+                workspace system.
+              </p>
+              <p>
+                A local-first workflow keeps the request context on your machine and near the project. That makes it easier
+                to test private services, work against local development servers, and keep examples aligned with the code
+                you are changing.
+              </p>
+
+              <p>
+                When request collections are stored as files, a changed endpoint can be reviewed like any other project
+                change. A teammate can see that a path changed, a header was added, or a sample body was updated before
+                the change becomes part of the shared workflow.
+              </p>
+              <p>
+                That review loop is especially useful for backend and frontend work. The API example can travel with the
+                implementation, so the request used to test a feature is easier to find later.
+              </p>
+
+              <p>
+                Branches, pull requests, diffs, and history are already familiar to development teams. A Git-friendly API
+                client does not need to replace that process. It can simply make API work fit inside it.
+              </p>
+              <ul>
+                <li>Branches can carry request changes with code changes.</li>
+                <li>Reviews can include endpoint examples and payload updates.</li>
+                <li>History can show when a shared API example changed.</li>
+              </ul>
+
+              <p>
+                When a tool focuses on the core request flow, there is less to think about. You can open a workspace,
+                choose a request, send it, inspect the result, and commit the request only when it is ready to be shared.
+              </p>
+
+              <h2>What's new in v0.2.0-alpha</h2>
+              <p>
+                This release focuses on making everyday API work easier to organize, preview, and continue from one
+                request to the next.
+              </p>
+              <ul>
+                <li>Workspace groups help separate personal and work API collections without adding cloud workspace overhead.</li>
+                <li>The app preview is sharper, with the current request, environment, body mode, response area, and saved state easier to scan.</li>
+                <li>JSON collection import is easier, so existing request sets can move into Patchman with less friction.</li>
+                <li>Response data can be captured into environments, which helps reuse values from one request in the next step.</li>
+              </ul>
+
+              <p>
+                Patchman is built around this practical idea: open the app, send the request, inspect the response, and
+                keep the request close to the project. The less the API workflow wanders away from the codebase, the easier
+                it is for a team to understand what changed and why.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-name">Kadek Cahya</div>
+          <div class="footer-handle">@kdkchy</div>
+          <p class="footer-disclaimer">
+            Patchman is an independent project and is not affiliated with, endorsed by, or sponsored by any parties.
+          </p>
+        </div>
+
+        <div class="footer-links" aria-label="Creator links">
+          <a href="mailto:me@kdkchy.com"><i class="ph-bold ph-envelope-simple" aria-hidden="true"></i></a>
+          <a href="https://x.com/kdkchy"><i class="ph-bold ph-x-logo" aria-hidden="true"></i></a>
+          <a href="https://github.com/kdkchy"><i class="ph-bold ph-github-logo" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <section class="footer-policy" aria-label="Site policies">
+      <div class="container footer-policy-inner">
+        <a href="../privacy-policy.html">Privacy Policy</a>
+      </div>
+    </section>
+  </div>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDVNNCB381"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YDVNNCB381');
+  </script>
+</body>
+</html>
