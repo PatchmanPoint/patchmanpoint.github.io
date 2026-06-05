@@ -14,13 +14,19 @@
   </url>
   <url>
     <loc>https://patchmanpoint.github.io/articles.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://patchmanpoint.github.io/articles/git-friendly-api-client.html</loc>
     <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://patchmanpoint.github.io/articles/small-step-ahead.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
