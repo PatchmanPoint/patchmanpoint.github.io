@@ -50,10 +50,10 @@
       "name": "Patchman",
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "Windows, macOS, Linux",
-      "softwareVersion": "v0.2.0-alpha",
+      "softwareVersion": "v0.2.1-1",
       "description": "Patchman is a lightweight, Git-friendly API client for API testing, REST request building, local-first collections, and developer collaboration.",
       "url": "https://patchmanpoint.github.io/",
-      "downloadUrl": "https://github.com/PatchmanPoint/releases/releases/tag/v0.2.0-1",
+      "downloadUrl": "https://github.com/PatchmanPoint/releases/releases/tag/v0.2.1-1",
       "author": {
         "@type": "Person",
         "name": "Kadek Cahya",
@@ -121,6 +121,7 @@
 
         <nav class="nav-links" aria-label="Main navigation">
           <a href="articles.html">Articles</a>
+          <a href="preparation.html">Preparation</a>
           <a href="#faq">FAQ</a>
           <a href="#download">Download</a>
           <a class="nav-cta" href="#download"><i class="ph-bold ph-download-simple" aria-hidden="true"></i>Get the app</a>
@@ -260,60 +261,71 @@
         </div>
       </section>
 
-      <section id="whats-new" class="section section-soft">
+      <section id="whats-new" class="section section-soft"> 
         <div class="container">
           <div class="section-head">
             <p class="section-kicker">What's new</p>
-            <h2>v0.2.0-alpha adds a cleaner workspace flow.</h2>
+            <h2>v0.2.1-1 adds request prep, JSON polish, and faster duplication.</h2>
             <p>
-              This alpha focuses on making everyday API work easier to organize, preview, and keep moving from one request to the next.
+              Update Notes brings a cleaner interface and practical workflow improvements for preparing, editing, and reusing API requests.
             </p>
           </div>
 
           <div class="whats-new-grid">
-            <article class="release-card release-card-featured">
-              <figure class="release-image">
-                <img
-                  src="images/preview/grouping.png"
-                  alt="Patchman groups dialog for organizing workspaces into Personal and Work groups"
-                />
-              </figure>
-              <div class="release-copy">
-                <span class="release-badge">v0.2.0-alpha</span>
-                <h3>Workspace groups</h3>
-                <p>
-                  Keep personal and work API collections separated with groups, so switching context stays simple without adding cloud workspace overhead.
-                </p>
-              </div>
-            </article>
-
-            <article class="release-card">
-              <figure class="release-image release-image-compact">
-                <img
-                  src="images/preview/main-preview.png"
-                  alt="Patchman app preview showing a request workspace and a groups dialog"
-                />
-              </figure>
-              <div class="release-copy">
-                <h3>Sharper app previews</h3>
-                <p>
-                  The interface now makes the current request, environment, body mode, response area, and saved state easier to scan while testing APIs.
-                </p>
-              </div>
-            </article>
-
-            <article class="release-card">
-              <div class="release-list" aria-label="v0.2.0-alpha highlights">
-                <div class="release-list-item">
-                  <i class="ph-bold ph-download-simple" aria-hidden="true"></i>
-                  <span>Easy import JSON collections</span>
+            <div>
+              <article class="release-card release-card-featured">
+                <figure class="release-image">
+                  <img
+                    src="images/v0.2.1/4.png"
+                    alt="Patchman interface showing the top bar, activity bar, sidebar, and workspace dropdown"
+                  />
+                </figure>
+                <div class="release-copy">
+                  <span class="release-badge">Update Notes</span>
+                  <h3>UI Enhancement</h3>
+                  <p>
+                    Improved several interface details to make Patchman feel cleaner, more consistent, and more comfortable to use.
+                  </p>
                 </div>
-                <div class="release-list-item">
-                  <i class="ph-bold ph-brackets-curly" aria-hidden="true"></i>
-                  <span>Capture response data into environments</span>
+              </article>
+            </div>
+
+            <div>
+              <article class="release-card">
+                <div class="release-copy">
+                  <h3>JSON Body Beautification</h3>
+                  <p>
+                    Added support for formatting JSON in the request body, making it easier to read, edit, and debug during API testing.
+                  </p>
                 </div>
-              </div>
-            </article>
+              </article>
+              <article class="release-card">
+                <div class="release-copy">
+                  <h3>Preparation Before Request</h3>
+                  <p>
+                    Added support for running JS before sending a request to prepare dynamic values, update environments, generate tokens, or customize request data.
+                  </p>
+                  <p>
+                    Available request values to manipulate:
+                  </p>
+                  <code class="release-code">request.url, request.headers, request.body</code>
+                  <a class="release-link" href="preparation.html">Read Preparation docs<i class="ph-bold ph-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </article>
+              <article class="release-card">
+                <div class="release-list" aria-label="v0.2.1 duplicate actions">
+                  <div class="release-list-item">
+                    <i class="ph-bold ph-copy" aria-hidden="true"></i>
+                    <span>Duplicate collections & requests</span>
+                  </div>
+                  <div class="release-list-item">
+                    <i class="ph-bold ph-files" aria-hidden="true"></i>
+                    <span>Import all of your old workspace into patchman.</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
           </div>
         </div>
       </section>
@@ -497,12 +509,12 @@
                 Try the lightweight, Git-friendly API client for local REST testing when releases are available for your operating system.
               </p>
               <p class="download-version">
-                Latest version: <strong>v0.2.0-alpha</strong> on
-                <a href="https://github.com/PatchmanPoint/releases/releases/tag/v0.2.0-1">PatchmanPoint/releases</a>
+                Latest version: <strong>v0.2.1-1</strong> on
+                <a href="https://github.com/PatchmanPoint/releases/releases/tag/v0.2.1-1">PatchmanPoint/releases</a>
               </p>
               <div class="hero-actions download-actions">
-                <a class="btn btn-primary" href="https://github.com/PatchmanPoint/releases/releases/tag/v0.2.0-1"><i class="ph-bold ph-download-simple" aria-hidden="true"></i>Download latest release</a>
-                <a class="btn btn-secondary" href="https://github.com/PatchmanPoint/releases/releases/tag/v0.2.0-1"><i class="ph-bold ph-arrow-square-out" aria-hidden="true"></i>View releases</a>
+                <a class="btn btn-primary" href="https://github.com/PatchmanPoint/releases/releases/tag/v0.2.1-1"><i class="ph-bold ph-download-simple" aria-hidden="true"></i>Download latest release</a>
+                <a class="btn btn-secondary" href="https://github.com/PatchmanPoint/releases/releases/tag/v0.2.1-1"><i class="ph-bold ph-arrow-square-out" aria-hidden="true"></i>View releases</a>
               </div>
             </div>
           </div>

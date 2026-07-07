@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prepare It: Patchman v0.2.1-1 Update Notes - Patchman</title>
+  <meta
+    name="description"
+    content="Patchman v0.2.1-1 is shaped by community feedback, with UI enhancements, JSON body beautification, scripts before requests, and duplicate actions."
+  />
+  <meta name="author" content="Kadek Cahya" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#1e3a5f" />
+  <link rel="canonical" href="https://patchmanpoint.github.io/articles/prepare-it/" />
+  <link rel="icon" href="../../favicon/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="../../favicon/site.webmanifest" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Patchman" />
+  <meta property="og:title" content="Prepare It: Patchman v0.2.1-1 Update Notes - Patchman" />
+  <meta
+    property="og:description"
+    content="Patchman v0.2.1-1 turns community feedback into small daily improvements: cleaner UI details, formatted JSON bodies, scripts before requests, and faster duplication."
+  />
+  <meta property="og:url" content="https://patchmanpoint.github.io/articles/prepare-it/" />
+  <meta property="og:image" content="https://patchmanpoint.github.io/articles/prepare-it/carbon.png" />
+  <meta property="article:published_time" content="2026-07-07" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Prepare It: Patchman v0.2.1-1 Update Notes - Patchman" />
+  <meta
+    name="twitter:description"
+    content="Patchman v0.2.1-1 turns community feedback into small daily improvements: cleaner UI details, formatted JSON bodies, scripts before requests, and faster duplication."
+  />
+  <meta name="twitter:image" content="https://patchmanpoint.github.io/articles/prepare-it/carbon.png" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css"
+  />
+  <link rel="stylesheet" href="../../style.css?v=20260707-prepare-it-mobile" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Prepare It: Patchman v0.2.1-1 Update Notes",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-07-07",
+      "author": {
+        "@type": "Person",
+        "name": "Kadek Cahya"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Patchman"
+      },
+      "image": "https://patchmanpoint.github.io/articles/prepare-it/carbon.png",
+      "mainEntityOfPage": "https://patchmanpoint.github.io/articles/prepare-it/"
+    }
+  </script>
+</head>
+<body>
+  <div class="page">
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a class="brand" href="../../index.html" aria-label="Patchman home">
+          <span class="brand-mark"><img src="../../logo.png" alt="" aria-hidden="true" /></span>
+          <span>Patchman</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="../../articles.html">Articles</a>
+          <a href="../../preparation.html">Preparation</a>
+          <a href="../../index.html#faq">FAQ</a>
+          <a href="../../index.html#download">Download</a>
+          <a class="nav-cta" href="../../index.html#download"><i class="ph-bold ph-download-simple" aria-hidden="true"></i>Get the app</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="article-page article-detail section">
+        <div class="container">
+          <article class="article-content">
+            <a class="article-back" href="../../articles.html"><i class="ph-bold ph-arrow-left" aria-hidden="true"></i>All articles</a>
+            <p class="article-kicker">Update notes</p>
+            <h1>Prepare it: Patchman v0.2.1-1 update notes</h1>
+            <time class="article-date" datetime="2026-07-07">July 7, 2026</time>
+            <p class="article-lead">
+              There is always something missing. That is not a failure; it is the room where a product gets better.
+              Patchman v0.2.1-1 is a small release shaped by that room, and its biggest step is Preparation: a script
+              that lets you do something right before a request is sent.
+            </p>
+
+            <figure class="article-hero-image">
+              <img
+                src="carbon.png"
+                alt="JavaScript preparation example for adding request timestamp and signature headers"
+              />
+            </figure>
+
+            <div class="article-body">
+              <p>
+                When Patchman was introduced to the community, people were kind enough to try it, talk about it, and
+                point at the parts that felt useful. Some reviews were encouraging. Some were not so comfortable to read.
+                Both mattered.
+              </p>
+
+              <p>
+                A good review tells us there is something worth continuing. A bad review tells us where the work should
+                go next. Between those two things, Patchman gets a clearer direction: keep the app lightweight, keep the
+                workflow close to developers, and keep improving the parts that slow people down.
+              </p>
+
+              <p>
+                This update is not a dramatic rewrite. It is a careful step. The kind of step that happens when you listen,
+                adjust, and come back the next day with something a little better than yesterday.
+              </p>
+
+              <h2>The big one: Preparation</h2>
+              <p>
+                The biggest update in this patch is Preparation script. In simple words, it gives you a place to run
+                JavaScript after Patchman has built the request, but before Patchman sends it.
+              </p>
+              <p>
+                That small moment before sending can be important. Sometimes a request needs a fresh timestamp. Sometimes
+                it needs a signature based on the final body. Sometimes a token, header, URL, or environment value needs
+                to be prepared at the last second. Preparation is made for that moment.
+              </p>
+              <p>
+                Instead of manually editing the same values again and again, you can let a script prepare them for you.
+                Press Send, let Patchman build the request, let Preparation adjust what needs to change, then send the
+                final version.
+              </p>
+              <p>
+                Preparation works best for request data that cannot stay static. You can use it to generate dynamic
+                values, update environment variables, create tokens, or customize request data before execution.
+              </p>
+              <p>
+                It helps when a request depends on the final URL, body, or headers. You can add a timestamp, sign the
+                request body, append query params, or prepare auth-style values at the last moment. The request you send
+                becomes the request you meant to send.
+              </p>
+
+              <h2>A cleaner place to work</h2>
+              <p>
+                The first improvement is simple: the interface feels cleaner. Several details have been adjusted so
+                Patchman feels more consistent and more comfortable during everyday API work.
+              </p>
+              <p>
+                Small UI changes can sound minor on a release note, but they matter when an app is open for hours. Less
+                visual friction means it is easier to move between requests, bodies, automation, and responses without
+                feeling like the tool is asking for extra attention.
+              </p>
+
+              <h2>JSON that is easier to read</h2>
+              <p>
+                Patchman now supports formatting, or beautifying, JSON in the request body. This makes raw JSON easier to
+                read, edit, and debug during API testing, especially when you are working with larger payloads or nested
+                data.
+              </p>
+              <p>
+                This is one of those features that feels obvious once it exists. Before that, messy JSON quietly wastes
+                time. Now the request body can be cleaned up in place, so the data becomes easier to understand before you
+                send it.
+              </p>              
+
+              <h2>Start from what already works</h2>
+              <p>
+                Duplicate actions are now available for both collections and requests. When you need a similar structure,
+                you can copy an existing collection or request and adjust only the parts that changed instead of starting
+                again from scratch.
+              </p>
+              <p>
+                It is a small convenience, but small conveniences add up. A repeated workflow should not punish you for
+                repeating it. If you already built a useful request shape, Patchman should let you reuse it quickly.
+              </p>
+
+              <p>
+                There will always be something missing. That is how software grows. Patchman is still taking small steps:
+                listen to feedback, improve what can be improved, and keep moving. Preparation is the big step in this
+                patch, but it still came from the same habit: improve a little every day, and let those small steps become
+                something bigger later.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-name">Kadek Cahya</div>
+          <div class="footer-handle">@kdkchy</div>
+          <p class="footer-disclaimer">
+            Patchman is an independent project and is not affiliated with, endorsed by, or sponsored by any parties.
+          </p>
+        </div>
+
+        <div class="footer-links" aria-label="Creator links">
+          <a href="mailto:me@kdkchy.com"><i class="ph-bold ph-envelope-simple" aria-hidden="true"></i></a>
+          <a href="https://x.com/kdkchy"><i class="ph-bold ph-x-logo" aria-hidden="true"></i></a>
+          <a href="https://github.com/kdkchy"><i class="ph-bold ph-github-logo" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <section class="footer-policy" aria-label="Site policies">
+      <div class="container footer-policy-inner">
+        <a href="../../privacy-policy.html">Privacy Policy</a>
+      </div>
+    </section>
+  </div>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDVNNCB381"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YDVNNCB381');
+  </script>
+</body>
+</html>
